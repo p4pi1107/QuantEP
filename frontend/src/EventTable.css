@@ -1,0 +1,51 @@
+.event-table-container {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.import-button, .upload-button, .add-event-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.selected-files {
+    margin-top: 10px;
+}
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.event-table th, .event-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.event-table th {
+    background-color: #f8f9fa;
+}
+
+.event-table select, .event-table input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.event-table-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.black-text {
+    color: black;
+}

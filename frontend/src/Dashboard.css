@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* RELATIONSHIP CARDS STYLING*/
+.relationship-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.relationship-card {
+    border-radius: 7px;
+    border-style: solid;
+    border-color: rgb(163, 163, 163);
+    background-color: #202020;
+    border-width: 2px;
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+    min-width: 20%;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.relationship-card:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+.r-card-events {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    font-size: 13px;
+    color: gray;
+}
+
+.r-card-title {
+    margin-bottom: 0px;
+}
+
+.r-card-left-border {
+    border-radius: 7px;
+    width: 20px;
+    min-height: 100%;
+}
+
+.r-card-group {
+    min-width: 60%;
+}
+
+/* EVENTS LIST STYLING*/
+.events-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border-style: solid;
+    border-color: grey;
+    min-height: 30%;
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.events-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 3px solid grey;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    box-sizing: border-box;
+
+}
+
+.events-header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.events-button {
+    width: 97%;
+    height: 10%;
+    background: #FFFFFF;
+    color: Grey;
+    outline: solid;
+    border-radius: 0;
+}
+
+.events-button:hover {
+    background: #FFFFFF;
+}
+
+.events-table {
+    width: 100%;
+}
+
+th {
+    text-align: left;
+    border-bottom: 1px solid grey;
+}
+
+tr {
+    border-style: solid;
+    border-color: gray;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px;
+}
+
+.stock-chart-section {
+    background-color: #202020;
+    width: 45%;
+    border-radius: 10px;
+    padding: 5%;
+    height: 30%;
+    max-height: 30%;
+    display: flex;
+    align-self: flex-start;
+    justify-content: center; /* Center the chart container */
+}
+
+.relationship-card-sign{
+    align-self: flex-end;
+}
+
+/*new events table*/
+.sortable-events-table {
+    font-weight: bold;
+    margin: auto;
+    max-width:  80%;
+}
+
+/* Dark Theme */
+body {
+    background-color: #111111;
+    color: #E0E0E0;
+    fill: #E0E0E0;
+    font-family: "Inter", sans-serif;
+}
+
+.MuiChartsAxis-bottom, .MuiChartsAxis-left {
+    color: #E0E0E0;
+}
+
+.relationship-block {
+    background-color: #202020;
+    width: 22%;
+    padding: 5%;
+    border-radius: 10px;
+}
+
+.dashboard-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 3%;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.events-list-section{
+    background-color: #202020;
+    width: 80%;
+    border-radius: 10px;
+    padding: 5%;
+}
+
+.dashboard-title-section {
+     width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .relationship-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+
+    .relationship-card {
+        width: 80%;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .relationship-block {
+        width: 80%;
+    }
+
+    .stock-chart-section {
+        width: 80%;
+    }
+}

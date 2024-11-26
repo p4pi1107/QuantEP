@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "commonjs",
+        "esModuleInterop": true,
+        "noImplicitAny": false,
+        "noEmit": true,
+        "resolveJsonModule": true,
+    },
+    "include": ["database/*"],
+    "exclude": [
+      "**/**_broken.ts"
+    ]
+  }
+  
